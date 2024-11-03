@@ -41,7 +41,7 @@ def main():
         for asteroid in asteroids:
             for shot in shots:
                 if shot.collides_with(asteroid):
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
 
         dt = clock.tick(60) / 1000
